@@ -10,7 +10,7 @@ Alura Geek es un challenge y una aplicación web que permite manipular el DOM ut
 - **Interacción Dinámica**: Utiliza JavaScript para manipular el DOM en tiempo real, proporcionando una experiencia de usuario fluida.
 
 ### Demostración
-Puedes ver la demostración de la aplicación [aquí]().
+Puedes ver la demostración de la aplicación [aquí](https://edwinpuello.github.io/AluraGeek/).
 
 ### Tecnologías Utilizadas
 - **HTML**: Estructura básica de la aplicación.

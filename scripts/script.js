@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         productos.forEach((producto, index) => {
             const productCard = document.createElement("div");
-            productCard.className = "col-md-2 mb-4";
-
+            productCard.className = "col-12 col-sm-6 col-md-6 col-lg-4 mb-4"; // Ajuste responsive
+        
             const precioNumero = parseFloat(producto.precio.replace(/[$,]/g, ''));
-
+        
             // Formatear el precio
             const precioFormateado = new Intl.NumberFormat('en-US', {
                 style: 'currency',
@@ -45,9 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
             `;
-
+        
             container.appendChild(productCard);
         });
+        ;
     }
 
     // Función para eliminar un producto

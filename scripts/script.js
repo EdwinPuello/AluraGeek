@@ -20,36 +20,47 @@ document.addEventListener("DOMContentLoaded", () => {
         this.value = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (decimalPart ? ',' + decimalPart : '');
     });
 
+    // Verifica si hay productos guardados en el localStorage
     const productosGuardados = localStorage.getItem("productos");
     if (productosGuardados) {
+        // Si hay productos guardados, los parsea y los renderiza
         productos = JSON.parse(productosGuardados);
         renderizarProductos(productos);
     }
 
+    // Realiza una solicitud para obtener los productos desde un archivo JSON
     fetch("./assets/json/productos.json")
-        .then(response => response.json())
+        .then(response => response.json()) // Convierte la respuesta a JSON
         .then(data => {
+            // Si no hay productos en la lista, asigna los datos obtenidos y los renderiza
             if (productos.length === 0) {
                 productos = data;
                 renderizarProductos(productos);
             }
         })
-        .catch(error => console.error("Error al cargar los productos:", error));
+        .catch(error => console.error("Error al cargar los productos:", error)); // Maneja errores en la solicitud
 
+    /**
+     * Renderiza los productos en el contenedor de productos
+     * @param {Array} productos - Lista de productos a renderizar
+     */
     function renderizarProductos(productos) {
         const container = document.querySelector("#product-container");
-        container.innerHTML = '';
+        container.innerHTML = ''; // Limpia el contenedor
 
+        // Itera sobre cada producto y crea una tarjeta para cada uno
         productos.forEach((producto, index) => {
             const productCard = document.createElement("div");
             productCard.className = "col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 mb-4";
 
+            // Formatea el precio del producto
             const precioNumero = parseFloat(producto.precio.replace(/[$,]/g, ''));
             const precioFormateado = new Intl.NumberFormat('de-DE', {
                 minimumFractionDigits: 0,
                 maximumFractionDigits: 0
             }).format(precioNumero);
 
+            // Crea el contenido HTML de la tarjeta del producto
             productCard.innerHTML = `
                 <div class="card">
                     <img src="${producto.imagen}" class="card-img-top img" alt="${producto.nombre}">

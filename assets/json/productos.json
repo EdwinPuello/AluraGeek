@@ -1,52 +1,52 @@
 [
     {
         "nombre": "PlayStation 5",
-        "precio": "$499.99",
+        "precio": "3800000",
         "imagen": "https://nafarimport.com/wp-content/uploads/2024/03/26-productos-falabella_pg-nafar-26.png"
     },
     {
         "nombre": "Xbox Series X",
-        "precio": "$499.99",
+        "precio": "2450000",
         "imagen": "https://exitocol.vtexassets.com/arquivos/ids/7234186/consola-xbox-series-x-1tb-microsoft.jpg?v=637532554326130000"
     },
     {
         "nombre": "Nintendo Switch",
-        "precio": "$299.99",
+        "precio": "1300000",
         "imagen": "https://i0.wp.com/portatilshoprd.com/wp-content/uploads/2022/01/s-l1600-2.png?fit=673%2C862&ssl=1"
     },
     {
         "nombre": "Controlador DualSense para PS5",
-        "precio": "$69.99",
+        "precio": "250000",
         "imagen": "https://cosonyb2c.vtexassets.com/arquivos/ids/345373-800-800?v=637363940945300000&width=800&height=800&aspect=true"
     },
     {
         "nombre": "Controlador Xbox Wireless",
-        "precio": "$59.99",
+        "precio": "275000",
         "imagen": "https://exitocol.vtexassets.com/arquivos/ids/9022410/control-xbox-inalambrico-carbon-black-para-xbox-one-series-x-y-s.jpg?v=637620663883100000"
     },
     {
         "nombre": "The Legend of Zelda: Breath of the Wild",
-        "precio": "$59.99",
+        "precio": "130000",
         "imagen": "https://media.vandal.net/m/43030/the-legend-of-zelda-breath-of-the-wild-201732131429_1.jpg"
     },
     {
         "nombre": "EA FC 25",
-        "precio": "$59.99",
+        "precio": "323000",
         "imagen": "https://cosonyb2c.vtexassets.com/arquivos/ids/359833/_img1_ps5.png?v=638593160460100000"
     },
     {
         "nombre": "Call of Duty",
-        "precio": "$69.99",
+        "precio": "256000",
         "imagen": "https://m.media-amazon.com/images/I/81TK4T6NQ6L._AC_UF894,1000_QL80_.jpg"
     },
     {
         "nombre": "Animal Cross",
-        "precio": "$59.99",
+        "precio": "70000",
         "imagen": "https://m.media-amazon.com/images/I/811PPKQerpL._AC_UF894,1000_QL80_.jpg"
     },
     {
         "nombre": "Halo Infinite",
-        "precio": "$59.99",
+        "precio": "160000",
         "imagen": "https://gamer4ever.com.co/cdn/shop/products/889842708103.jpg?v=1649198064"
     }
 ]

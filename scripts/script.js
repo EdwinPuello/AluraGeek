@@ -148,4 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
         productForm.reset();
         productModal.hide();
     });
+
+    document.getElementById("addProduct").addEventListener("click", () => {
+        editando = false;  // Cuando se haga clic en el botón, 'editando' se pone a false
+        productForm.reset();
+        document.getElementById("productModalLabel").innerText = "Agregar Producto";
+        console.log("editando:", editando);  // Verificación en consola
+    });
 });
